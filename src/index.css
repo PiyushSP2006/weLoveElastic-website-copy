@@ -32,3 +32,26 @@ body{
 .greetings{
     font-size: 42vw;
 }
+
+.navbar{
+    width:100vw;
+    box-sizing:border-box;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 3rem;
+    color:bisque;
+}
+.navbar-title{
+    font-size:1.5rem;
+    line-height:1.1;
+}
+.navbar-list{
+    list-style:none;
+    display:flex;
+    gap:2rem;
+}
+.navbar-list li{
+    text-transform:capitalize;
+    cursor:pointer;
+}

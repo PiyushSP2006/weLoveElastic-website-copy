@@ -7,6 +7,10 @@ export default function IntroSection(props){
         let lettersGreeting=new SplitText(".greetings",{
             type:"chars"
         })
+
+        // let spanText=new SplitText(,{
+        //     type:"lines"
+        // })
         loaderTl.to(".loader",{
             opacity:0,
             yPercent:-100,
@@ -18,6 +22,7 @@ export default function IntroSection(props){
             yPercent:100,
             ease:"power3.inOut"
         },'-=1').from(lettersGreeting.chars,{
+            opacity:0,
             yPercent:100,
             stagger:0.15,            
             ease:"power3.out"
@@ -30,13 +35,24 @@ export default function IntroSection(props){
 
 
     return(
-        <div>
+        <div className="hello-section">
             <div className="loader">
                 <h1>loading animation</h1>
             </div>
             <div className="main-content">
-                <h1 className="greetings">hello</h1>
+                <h1 className="greetings">
+                    hello
+                    <span>
+                        WE ARE THE TEAM
+                    </span>
+                    <span>
+                        WE THINK ELASTIC
+                    </span>
+                    </h1>
             </div>
+
+           
+            
         </div>
     )
 }

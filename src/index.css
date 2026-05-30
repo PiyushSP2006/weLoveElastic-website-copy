@@ -6,6 +6,22 @@
 body{
     background-color: black;
 }
+.hello-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hello-section span{
+    color: bisque;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2.7rem;
+}
+
 .loader,
 .main-content{
     width:100vw;

@@ -11,17 +11,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    
 }
-.hello-section span{
-    color: bisque;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 2.7rem;
-}
-
 .loader,
 .main-content{
     width:100vw;
@@ -70,4 +62,49 @@ body{
 .navbar-list li{
     text-transform:capitalize;
     cursor:pointer;
+}
+
+
+/* VIDEO SECTION */
+
+.video-section{
+    width: 100vw;
+    height: 100vh;
+    color: bisque;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.text-section-1{
+    color: bisque;
+    width: 100vw;
+    /* height: clamp(33vh,100vh,100vh); */
+    box-sizing:border-box;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    margin-top: 5%;
+
+    padding-left: 8vh;
+    padding-right: 8vh;
+}
+
+.text-section-1 h1{
+    font-size: 10vw;
+   margin: -1rem;
+}
+
+.highlighted-text{
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #f5f5dc27 ;
+    text-align: center;
+    font-size: 1.5rem;
 }

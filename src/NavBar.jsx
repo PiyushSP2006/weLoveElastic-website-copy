@@ -1,7 +1,9 @@
+import { isMobile } from "react-device-detect"
+
 export default function NavBar(props){
     return(
-        <nav className="navbar">
-            <h1 className="navbar-title">
+        <nav className="navbar" style={{width:isMobile?"100vw":"100vw"}}>
+            <h1 className="navbar-title" >
                 WE <br/>THINK<br/>
                 Elastic
             </h1>

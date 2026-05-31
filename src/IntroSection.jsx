@@ -1,6 +1,11 @@
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import SplitText from "gsap/SplitText.js"
+import { BrowserView, MobileView, isMobile } from "react-device-detect";
+
+
+
+
 export default function IntroSection(props){
     useGSAP(()=>{
         const loaderTl=gsap.timeline()
@@ -33,22 +38,17 @@ export default function IntroSection(props){
         },"<")
     })
 
-
+    console.log(isMobile)
     return(
-        <div className="hello-section">
-            <div className="loader">
-                <h1>loading animation</h1>
+        <div className="wrapper" style={{width:isMobile?"100vw":"100vw",
+                height:isMobile?"66vh":"100vh"}}>
+            <div className="loader" >
+                <h1 >loading animation</h1>
             </div>
-            <div className="main-content">
-                <h1 className="greetings">
+            <div className="main-content" style={{height:isMobile?"66vh":"100vh"}}>
+                <h1 className="greetings" style={{fontSize:isMobile?"7rem":"42vw"}} >
                     hello
-                    <span>
-                        WE ARE THE TEAM
-                    </span>
-                    <span>
-                        WE THINK ELASTIC
-                    </span>
-                    </h1>
+                </h1>
             </div>
 
            
@@ -80,3 +80,5 @@ export default function IntroSection(props){
 //     stagger:0.1,
 //     ypercent100
 // },"<")
+
+// style={{fontSize:isMobile?"20vw":"16px"}}

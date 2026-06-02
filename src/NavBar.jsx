@@ -8,12 +8,13 @@ export default function NavBar(props){
                 Elastic
             </h1>
             {/* CONVERT THESE TO NAVLINKS TO FINISH THE WEBSITE COMPLETELY */}
-            <ul className="navbar-list">
+            {isMobile?<h1>navbar</h1>:<ul className="navbar-list">
                 <li>projects</li>
                 <li>Expertise</li>
                 <li>The Team</li>
                 <li>contact</li>
-            </ul>
+            </ul>}
+            
         </nav>
     )
 }

@@ -3,7 +3,7 @@ import { isMobile } from "react-device-detect";
 export default function TextUnderVideoSection(props){
     return(
         
-<div className="text-section-1" style={{height:isMobile?"33vh":"100vh",}}>
+<div className="text-section-1" style={{height:"max-content",}}>
     {isMobile?
         <>
         <h1 style={{display:"flex",flexDirection:"column",textAlign:"center",justifyContent:"center"}}><span>we</span> LET'S HELP<br/> the brands<br/>More <br/> quickly</h1>

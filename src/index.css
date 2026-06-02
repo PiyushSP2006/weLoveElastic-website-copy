@@ -4,7 +4,7 @@
 
 }
 body{
-    background-color: black;
+    background-color: #151414;
 }
 .hello-section{
     display: flex;
@@ -34,7 +34,7 @@ body{
 }
 
 .main-content{
-    background-color:black;
+    background-color:#151414;
     color: bisque;
 }
 .greetings{
@@ -42,7 +42,7 @@ body{
 }
 
 .navbar{
-    width:100vw;
+    width:clamp(100vw,100vw,100vw);
     box-sizing:border-box;
     display:flex;
     justify-content:space-between;
@@ -81,7 +81,7 @@ body{
 
 .text-section-1{
     color: bisque;
-    width: 100vw;
+    width: clamp(calc(100vw-8vw),100vw,100vw);
     /* height: clamp(33vh,100vh,100vh); */
     box-sizing:border-box;
 
@@ -91,8 +91,8 @@ body{
 
     margin-top: 5%;
 
-    padding-left: 8vh;
-    padding-right: 8vh;
+    padding-left: 8vw;
+    padding-right: 8vw;
 }
 
 .text-section-1 h1{
@@ -107,4 +107,22 @@ body{
     background-color: #f5f5dc27 ;
     text-align: center;
     font-size: 1.5rem;
+}
+.showcase-section{
+    margin-top: clamp(20vh,33vh,20vh);
+    background-color: #151414;
+
+    width: 100vw;
+    /* height: clamp(min-content,100vh,max-content); */
+    /* height: 300vh; */
+
+    color: bisque;
+
+}
+.flexbox-container{
+    
+    display: grid;
+    grid-template-columns:repeat(8,1fr) ;
+    grid-template-rows:repeat(4,1fr) ;
+
 }

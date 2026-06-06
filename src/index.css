@@ -25,7 +25,7 @@ body{
 }
 
 .loader{
-    background-color:bisque;
+    background-color:#f3c77c;
 
     position:fixed;
     inset:0;
@@ -35,7 +35,7 @@ body{
 
 .main-content{
     background-color:#151414;
-    color: bisque;
+    color: #f3c77c;
 }
 .greetings{
     font-size: 42vw;
@@ -48,7 +48,7 @@ body{
     justify-content:space-between;
     align-items:center;
     padding:1rem 3rem;
-    color:bisque;
+    color:#f3c77c;
 }
 .navbar-title{
     font-size:1.5rem;
@@ -70,7 +70,7 @@ body{
 .video-section{
     width: 100vw;
     height: 100vh;
-    color: bisque;
+    color: #f3c77c;
 
     display: flex;
     flex-direction: column;
@@ -80,7 +80,7 @@ body{
 }
 
 .text-section-1{
-    color: bisque;
+    color: #f3c77c;
     width: clamp(calc(100vw-8vw),100vw,100vw);
     /* height: clamp(33vh,100vh,100vh); */
     box-sizing:border-box;
@@ -113,16 +113,13 @@ body{
     background-color: #151414;
 
     width: 100vw;
-    /* height: clamp(min-content,100vh,max-content); */
-    /* height: 300vh; */
-
-    color: bisque;
+    color: #f3c77c;
 
 }
 .flexbox-container{
     
     display: grid;
     grid-template-columns:repeat(8,1fr) ;
-    grid-template-rows:repeat(4,1fr) ;
+    padding: 5% 5% 5% 5%;
 
 }

@@ -5,6 +5,10 @@ import NavBar from "../src/NavBar"
 import VideoSection from "./VideoSection"
 import TextUnderVideoSection from "./TextUnderVideoSection"
 import ShowCaseSection from "./ShowCaseSection"
+import ExperienceSection from "./ExperienceSection"
+import { Footer } from "./Footer"
+import CustomerSection from "./CustomerSection"
+import SecondLastSection from "./2ndLastSection"
 gsap.registerPlugin(ScrollTrigger,SplitText)
 
 export default function App(props){
@@ -15,6 +19,10 @@ export default function App(props){
         <VideoSection/>
         <TextUnderVideoSection/>
         <ShowCaseSection/>
+        <ExperienceSection/>
+        <CustomerSection/>
+        <SecondLastSection/>
+        <Footer/>
     </>
 
     )

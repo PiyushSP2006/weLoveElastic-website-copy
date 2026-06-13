@@ -30,6 +30,7 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
+    overflow-y: hidden;
 }
 
 .loader{
@@ -47,6 +48,7 @@ body{
 }
 .greetings{
     font-size: 42vw;
+    overflow-y: hidden;
 }
 
 .navbar{
@@ -78,34 +80,40 @@ body{
 .video-section{
     width: 100vw;
     height: 100vh;
+    
     color: #f3c77c;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
     
 }
+@media  screen and (min-width:760px) {
+    .video-section video{
+        scale: 0.4;
+    }
+    
+}
+
 
 .text-section-1{
     color: #f3c77c;
     width: clamp(calc(100vw-8vw),100vw,100vw);
-    /* height: clamp(33vh,100vh,100vh); */
+    height: max-content;
     box-sizing:border-box;
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 
     margin-top: 5%;
 
     padding-left: 8vw;
     padding-right: 8vw;
+    overflow-y: hidden;
 }
 
 .text-section-1 h1{
     font-size: 10vw;
-   margin: -1rem;
+   margin-top: -1rem;
 }
 
 .highlighted-text{
@@ -115,6 +123,7 @@ body{
     background-color: #f5f5dc27 ;
     text-align: center;
     font-size: 1.5rem;
+    height: max-content;
 }
 .showcase-section{
     margin-top: clamp(20vh,33vh,20vh);

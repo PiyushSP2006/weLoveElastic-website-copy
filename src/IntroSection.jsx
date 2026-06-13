@@ -13,9 +13,6 @@ export default function IntroSection(props){
             type:"chars"
         })
 
-        // let spanText=new SplitText(,{
-        //     type:"lines"
-        // })
         loaderTl.to(".loader",{
             opacity:0,
             yPercent:-100,

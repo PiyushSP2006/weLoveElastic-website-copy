@@ -12,6 +12,7 @@ import SecondLastSection from "./2ndLastSection"
 gsap.registerPlugin(ScrollTrigger,SplitText)
 
 export default function App(props){
+    
     return(
     <>        
         <NavBar/>

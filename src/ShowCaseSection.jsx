@@ -1,5 +1,9 @@
 import { isMobile } from "react-device-detect"
+
+
 export default function ShowCaseSection(props){
+
+
     return(
         <div className="showcase-section" >
            <div className="flexbox-container" style={isMobile?{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}:{display:"grid"}}

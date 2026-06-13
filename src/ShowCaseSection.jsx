@@ -37,7 +37,7 @@ const items=[
     {
         id:1,
         thumnailType:"video",
-        thumnail:"../assets/thumnail-IEC.mp4",
+        thumnail:"/assets/thumnail-IEC.mp4",
         h1:"HEC PARIS IEC",
         P:"Branding , Digital , Strategy",
         gridClm:"span 5",

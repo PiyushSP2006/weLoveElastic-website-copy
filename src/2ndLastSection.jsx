@@ -16,7 +16,7 @@ export default function SecondLastSection(){
             scrollTrigger:{
                 trigger:".second-last-section",
                 start:"top 30%",
-                markers:true
+               
             }
         })
     })
